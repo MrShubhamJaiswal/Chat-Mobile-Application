@@ -1,14 +1,17 @@
-#Chat Mobile Application
-Overview
-This project is a real-time chat application developed for Android using Java, XML, and Firebase. It provides users with the ability to chat in real-time, manage their messages, update their status, and express emotions through reactions.
+# Chat Mobile Application
 
-Features
-Mobile Number Authentication: Integrated Firebase Authentication for secure mobile number-based user authentication, enhancing login and registration processes.
-Real-time Chatting: Users can send and receive messages instantly using Firebase Realtime Database.
-Message Management: Users can delete messages from their conversation history.
-User Status: Users can view and update their availability and activity status.
+**Technologies:** Java, Android, XML, Firebase
 
-Technologies Used
-Java: Programming language used for Android development.
-XML: Layout and UI design for Android.
-Firebase: Provides real-time database services, user authentication, and backend infrastructure.
+## Overview
+
+This is a real-time chat application for Android developed using Java, XML, and Firebase. It offers users an interactive messaging experience with secure authentication and various features to manage their conversations.
+
+## Features
+
+- **Mobile Number Authentication:** Integrated Firebase Authentication for secure mobile number-based user authentication, enhancing login and registration processes.
+- **Real-time Chatting:** Implemented real-time messaging using Firebase Realtime Database.
+- **Message Management:** Enabled users to delete messages, providing control over their conversation history.
+- **User Status:** Added a feature allowing users to view and update their availability and activity status.
+
+
+
