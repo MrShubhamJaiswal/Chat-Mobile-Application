@@ -1,0 +1,24 @@
+<!-- res/values/styles.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WhatsappClone" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/greenDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Customize the status bar color -->
+        <item name="android:statusBarColor">#FF9800</item>
+    </style>
+
+    <style name="Theme.WhatsappClone" parent="Base.Theme.WhatsappClone">
+        <!-- Additional customization for this theme if needed -->
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/greenDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Customize the status bar color -->
+        <item name="android:statusBarColor">#FF9800</item>
+    </style>
+</resources>

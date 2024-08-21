@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItemSearch"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuItemGroup"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="Group" />
+    <item
+        android:id="@+id/menuItemInvite"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Invite" />
+    <item
+        android:id="@+id/menuItemSetting"
+        android:icon="@drawable/ic_send"
+        android:title="Setting" />
+</menu>
