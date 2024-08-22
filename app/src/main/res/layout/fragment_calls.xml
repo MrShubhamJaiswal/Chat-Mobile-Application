@@ -108,15 +108,15 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/logout_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:drawableStart="@drawable/baseline_info_24"
+            android:drawableStart="@drawable/baseline_exit_to_app_24"
             android:drawablePadding="15dp"
             android:drawableTint="@color/green"
             android:padding="10dp"
-            android:text="About Us"
+            android:text="Logout"
             android:textSize="18sp"
             android:textStyle="bold" />
 
