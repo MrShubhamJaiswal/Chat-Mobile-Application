@@ -4,6 +4,7 @@ public class ModelMessage {
     String meesageId,message,senderId;
     long timestamp;
     int feeling;
+    private String imageUrl;
 
     public ModelMessage() {
     }
@@ -13,6 +14,7 @@ public class ModelMessage {
         this.senderId = senderId;
         this.timestamp = timestamp;
     }
+    
 
     public String getMeesageId() {
         return meesageId;
@@ -52,5 +54,13 @@ public class ModelMessage {
 
     public void setFeeling(int feeling) {
         this.feeling = feeling;
+    }
+    
+    public String getImageUrl() {
+        return imageUrl;
+    }
+    
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

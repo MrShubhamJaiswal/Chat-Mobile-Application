@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,11 +13,9 @@
         android:layout_marginEnd="7dp"
         android:background="@drawable/bg_sender_message"
         android:maxWidth="310dp"
-        android:maxHeight="400dp"
+        android:maxHeight="400dp">
 
-
-        >
-
+        <!-- Guideline for Time -->
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
             android:layout_width="wrap_content"
@@ -26,37 +23,55 @@
             android:orientation="vertical"
             app:layout_constraintGuide_end="16dp" />
 
+        <!-- Image View for Sent Photo -->
+        <ImageView
+            android:id="@+id/imgSend"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintDimensionRatio="H,1:1"
+            app:layout_constraintWidth_default="wrap"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintBottom_toTopOf="@+id/tvSendMessage"
+            android:layout_margin="8dp" />
+
+        <!-- Text Message -->
         <TextView
             android:id="@+id/tvSendMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="4dp"
-            android:layout_marginBottom="3dp"
-            android:inputType="textLongMessage|textMultiLine"
+            android:layout_marginBottom="2dp"
             android:maxWidth="200dp"
             android:minWidth="50dp"
             android:textSize="18sp"
-            android:text="abubvausiuvbDSKVBusdbvudsbvusdbvudsvcSsZCSZCzCsudivdsuiviuduvuisduisuiadvsuzvbuisdvabi"
+            android:text="This is a sent message."
+            android:textColor="@color/black"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/imgSend"
             app:layout_constraintBottom_toTopOf="@+id/tvSendTime"
-            app:layout_constraintEnd_toStartOf="@+id/guideline"
-            app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintEnd_toStartOf="@+id/guideline" />
 
+        <!-- Time -->
         <TextView
             android:id="@+id/tvSendTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
             android:layout_marginBottom="4dp"
-            android:layout_marginTop="4dp"
-            android:text="TextView"
+            android:text="10:45 AM"
             android:textSize="10sp"
+            android:textColor="#1D1D1D"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
