@@ -13,7 +13,9 @@
         android:theme="@style/Theme.WhatsappClone"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name=".activity.UserProfileDetails"
+            android:exported="false" />
         <activity
             android:name=".activity.ChatActivity"
             android:exported="false" />

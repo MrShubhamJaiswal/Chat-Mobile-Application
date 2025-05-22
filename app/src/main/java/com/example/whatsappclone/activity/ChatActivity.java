@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -59,6 +60,8 @@ public class ChatActivity extends AppCompatActivity {
         String receiverUid = getIntent().getStringExtra("uid");
         String profilePic = getIntent().getStringExtra("profileImage");
         String senderUid = FirebaseAuth.getInstance().getUid();
+
+
         
         
         binding.tvusernamechat.setText(name);
@@ -66,6 +69,14 @@ public class ChatActivity extends AppCompatActivity {
         binding.backButtonChat.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
+        });
+
+        binding.tvusernamechat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),UserProfileDetails.class);
+                startActivity(intent);
+            }
         });
         
         messageArrayList = new ArrayList<>();
